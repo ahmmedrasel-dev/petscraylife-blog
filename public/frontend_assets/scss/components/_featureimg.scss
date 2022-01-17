@@ -1,0 +1,12 @@
+#feature_img {
+  height: 500px;
+  margin: 20px 0px 60px;
+
+  img {
+    height: 500px;
+  }
+
+  @include media(320px, 575px){
+    display: none;
+  }
+}

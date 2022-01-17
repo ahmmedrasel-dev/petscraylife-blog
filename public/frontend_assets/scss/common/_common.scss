@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+body {
+  font-family: 'Quantico',
+    sans-serif,
+    'Roboto',
+    sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+a,
+p,
+i,
+span {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}

@@ -1,0 +1,9 @@
+@import '../mixins/divsize';
+
+.mainlogo {
+  @include divsize(100%, rgba(233, 207, 207, 0))
+}
+
+.nav-border {
+  border-bottom: 2px solid #DA6868;
+}

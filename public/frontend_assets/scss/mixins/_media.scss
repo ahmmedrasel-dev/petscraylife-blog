@@ -1,0 +1,12 @@
+@mixin media ($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content
+  }
+};
+
+
+@mixin extralarge(){
+  @media(min-width: 1400px){
+    @content
+  }
+}

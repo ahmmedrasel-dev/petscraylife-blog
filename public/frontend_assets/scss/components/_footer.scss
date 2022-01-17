@@ -1,0 +1,95 @@
+@import "../variables/color";
+@import '../mixins/media';
+
+#footer {
+  padding-top: 30px;
+  background: $footerbg;
+
+  img {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  .footer-bootm {
+    background: $footbgbottom;
+    padding: 10px 0px;
+    margin-top: 30px;
+  }
+
+  .title {
+    h3 {
+      color: $titlecolor;
+      border-bottom: 2px solid $titlecolor;
+      display: inline-block;
+    }
+
+    margin-bottom: 20px;
+  }
+
+  ul {
+    li {
+      a {
+        color: $menulink;
+
+        &:hover {
+          color: $hovercolor;
+        }
+      }
+    }
+  }
+
+  @include media(320px, 575px){
+    .content-box {
+      text-align: center;
+      margin-bottom: 20px;
+      form {
+        margin: 10px 25px;
+      }
+
+      p{
+        padding: 0px 30px;
+      }
+    }
+  }
+
+  @include media(575px, 767.98px){
+    img {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    .content-box {
+      margin-bottom: 20px;
+    }
+
+  }
+
+
+
+}
+
+.color {
+  background: $titlecolor;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.backToTop {
+  width: 40px;
+  height: 40px;
+  background: $titlecolor;
+  text-align: center;
+  line-height: 40px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  right: 25px;
+  bottom: 45px;
+  z-index: 999;
+  display: none;
+
+  i {
+    color: #fff;
+  }
+}

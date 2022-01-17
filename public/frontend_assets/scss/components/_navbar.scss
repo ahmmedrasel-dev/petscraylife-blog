@@ -1,0 +1,119 @@
+@import '../variables/color';
+
+.navbarborder {
+  border-bottom: 2px solid #DA6868;
+  position: relative;
+}
+
+.navbarborder::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 100%;
+  top: 2px;
+  background: #DA6868;
+  left: 0;
+}
+
+@include media(320px, 575px) {
+  .navbar-toggler:focus {
+    box-shadow: none;
+    border: 2px solid #da6868;
+  }
+
+  .fas.fa-bars {
+    color: #da6868;
+    font-size: 25px;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .nav-item {
+    border: 1px solid #da686833;
+  }
+
+  .navbar-brand.m-auto.logo {
+    display: none;
+  }
+
+}
+
+@include media(576px, 767px) {
+  .navbar-toggler:focus {
+    box-shadow: none;
+    border: 2px solid #da6868;
+  }
+
+  .fas.fa-bars {
+    color: #da6868;
+    font-size: 25px;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .nav-item {
+    border: 1px solid #da686833;
+  }
+
+  .navbar-brand.m-auto.logo {
+    display: none;
+  }
+
+}
+
+@include media(767px, 991.98px) {
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-brand.m-auto.logo {
+    display: block;
+  }
+}
+
+@include media(992px, 1199.98px) {
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-brand.m-auto.logo {
+    display: block;
+  }
+}
+
+@include media(1200px, 1399px){
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-brand.m-auto.logo {
+    display: block;
+  }
+}
+
+@include extralarge(){
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-brand.m-auto.logo {
+    display: block;
+  }
+}
+
+.nav-link {
+  font-size: 22px;
+  color: $menulink;
+}
+
+.nav-link {
+  padding: 10px 20px !important;
+
+  &:hover {
+    color: #DA6868;
+  }
+}

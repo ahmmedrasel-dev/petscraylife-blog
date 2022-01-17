@@ -1,0 +1,49 @@
+@import "../mixins/divsize";
+@import "../variables/color";
+
+.top-bar {
+  @include divsize(100%, $bgcolor);
+  padding: 10px 0px;
+
+  @include media(320px, 575px){
+    .time {
+      p {
+        font-size: 15px;
+        margin-left: 10px;
+      }
+      
+    }
+  }
+
+  p {
+    color: $titlecolor;
+    font-family: 'Quantico', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include media(320px, 575px) {
+      margin-right: 12px;
+    }
+  }
+
+  li {
+
+    @include media(320px, 575px) {
+      margin-left: 12px;
+    }
+    margin-left: 20px;
+
+    a i {
+      @include media(320px, 575px) {
+        font-size: 15px;
+      }
+      font-size: 25px;
+      color: $titlecolor;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import '../variables/color';
+
+#blogpost {
+  margin-bottom: 50px;
+
+  .blog-post {
+    margin-bottom: 30px;
+  }
+
+  @include media(320px, 575px){
+    padding: 0px 30px;
+  }
+
+  @include media(576px, 767.98px) {
+    .blog-post {
+      padding: 0px 30px;
+    }
+  }
+
+  
+}
+
+.card-body {
+
+  background: $bgcolor;
+
+  h3 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .date {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  .summary {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: $summarycolor;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .btn-color {
+    color: #fff;
+    background: $titlecolor !important;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}
+
+.page-item {
+  margin: 0px 10px;
+
+  .page-link {
+    background: $bgcolor !important;
+  }
+}
